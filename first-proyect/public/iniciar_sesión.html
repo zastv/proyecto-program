@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="theme-color" content="#000000" />
+      <meta name="description" content="Farmacia Cápsula - Iniciar Sesión" />
+      <link rel="stylesheet" href="css/style1.css">
+      <title>Iniciar Sesión - Farmacia Cápsula</title>
+    </head>
+    <body>
+      <section class="secnavbar">
+        <div>
+          <h2 class="nombre">Farmacia Cápsula</h2>
+        </div>
+        <div class="navbar">
+          <a href="index.php">Inicio</a>
+          <a href="producto.html">Producto</a>
+          <a href="delivery.html">Delivery</a>
+          <a href="servicios.html">Servicios</a>
+        </div>
+      </section>
+    
+      <div class="login-container">
+        <form id="loginForm" class="login-form">
+          <h1>Iniciar Sesión</h1>
+          
+          <div class="form-group">
+            <label for="email">Usuario (Email):</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              placeholder="Ingrese su correo electrónico" 
+              required
+            />
+          </div>
+      
+          <div class="form-group">
+            <label for="password">Contraseña:</label>
+            <input 
+              type="password" 
+              id="password" 
+              name="password" 
+              placeholder="Ingrese su contraseña" 
+              required
+            />
+          </div>
+      
+          <button type="submit">Ingresar</button>
+          
+          <div class="links">
+            <a href="#">¿Olvidaste tu contraseña?</a>
+            <a href="registrarse.html">Crear cuenta nueva</a>
+          </div>
+        </form>
+      </div>
+    
+      <section class="footer-section">
+        <img src="https://images.vexels.com/media/users/3/135594/isolated/preview/bdfd2abb53c8631d97c489a07e121c44-icono-de-capsula.png" alt="Logo de la Farmacia Cápsula" class="footer-logo">
+        <h2 class="footer-title">Farmacia Cápsula</h2>
+        <p class="footer-contact">A domicilio: 800-522-6600</p>
+        <p class="footer-email">Correo electrónico: info@farmaciacapsula.com</p>
+        <ul class="footer-links">
+          <li><a href="#">Contáctanos</a></li>
+          <li><a href="#">Información Legal</a></li>
+          <li><a href="#">Preguntas Frecuentes</a></li>
+        </ul>
+      </section>
+    
+      <script>
+        // Capturar y enviar los datos al servidor
+        const form = document.getElementById("loginForm");
+        form.addEventListener("submit", async (event) => {
+          event.preventDefault(); // Evita que la página se recargue
+    
+          const email = document.getElementById("email").value;
+          const password = document.getElementById("password").value;
+    
+          try {
+            const response = await fetch("http://localhost:300/api/usuarios", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ email, password }),
+            });
+    
+            const result = await response.json();
+            if (response.ok) {
+              alert(result.message); // Muestra mensaje de éxito
+            } else {
+              alert("Error: " + result.message); // Muestra mensaje de error
+            }
+          } catch (error) {
+            console.error("Error al enviar datos:", error);
+            alert("Ocurrió un error al iniciar sesión.");
+          }
+        });
+      </script>
+    </body>
+    </html>
+    
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="css/style1.css">
+    <title>React App</title>
+  </head>
+  <body>
+    
+
+    <section class="secnavbar">
+      <div>
+        <h2 class="nombre">
+            Farmacia Capsula
+        </h2>
+    </div>
+
+    <div class="navbar">
+      <a href="index.php">inicio</a>
+      <a href="producto.html">producto</a>
+      <a href="delivery.html">delivery</a>
+      <a href="servicios.html">servicios</a>
+    </div>
+
+    </section>
+
+    <div class="login-container">
+        <form class="login-form">
+          <h1>Iniciar Sesión</h1>
+          
+          <div class="form-group">
+            <label>Usuario:</label>
+            <input 
+              type="text" 
+              placeholder="Ingrese su usuario"
+            />
+          </div>
+      
+          <div class="form-group">
+            <label>Contraseña:</label>
+            <input 
+              type="password"
+              placeholder="Ingrese su contraseña"
+            />
+          </div>
+      
+          <button type="submit">Ingresar</button>
+          
+          <div class="links">
+            <a href="#">¿Olvidaste tu contraseña?</a>
+            <a href="registrarse.html">Crear cuenta nueva</a>
+          </div>
+        </form>
+      </div>
+      <section class="footer-section">
+        <img src="https://images.vexels.com/media/users/3/135594/isolated/preview/bdfd2abb53c8631d97c489a07e121c44-icono-de-capsula.png" alt="Logo de la Farmacia Cápsula" class="footer-logo">
+        
+        <h2 class="footer-title">Farmacia Cápsula</h2>
+        <p class="footer-contact">A domicilio: 800-522-6600</p>
+        <p class="footer-email">Correo electrónico: info@farmaciacapsula.com</p>
+        <ul class="footer-links">
+            <li><a href="#">Contactanos</a></li>
+            <li><a href="#">Información Legal</a></li>
+            <li><a href="#">Preguntas Frecuentes</a></li>
+        </ul>
+      </section>
+  </body>
+</html>

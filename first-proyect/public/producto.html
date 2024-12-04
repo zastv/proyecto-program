@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style6.css">
+  <title>Productos - Farmacia Cápsula</title>
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <section class="secnavbar">
+    <div>
+      <h2 class="nombre">Farmacia Cápsula</h2>
+    </div>
+    <div class="navbar">
+      <a href="index.php">Inicio</a>
+      <a href="producto.html" class="active">Productos</a>
+      <a href="delivery.html">Delivery</a>
+      <a href="servicios.html">Servicios</a>
+    </div>
+  </section>
+
+  <!-- Filtro -->
+  <div class="filter-container">
+    <label for="product-filter">Filtrar por:</label>
+    <select id="product-filter" onchange="filterProducts()">
+      <option value="all">Todos</option>
+      <option value="most-sold">Más comprados</option>
+      <option value="cheapest">Más baratos</option>
+    </select>
+  </div>
+
+  <div class="products-grid">
+    <!-- Producto 1 -->
+    <div class="product-card" data-price="5" data-sold="50">
+      <img src="imagenes/Productos/tempra-500mg-20t_i.png" alt="Producto 1" class="product-image">
+      <h3 class="product-name">Paracetamol 500mg</h3>
+      <p class="product-description">Alivia dolores y reduce la fiebre. Caja con 20 tabletas.</p>
+      <p class="product-price">$5.00</p>
+      <button class="add-to-cart">Añadir al carrito</button>
+    </div>
+  
+    <!-- Producto 2 -->
+    <div class="product-card" data-price="10" data-sold="20">
+      <img src="imagenes/Productos/antiseptica.jpg" alt="Producto 2" class="product-image">
+      <h3 class="product-name">Vitamina C 1000mg</h3>
+      <p class="product-description">Fortalece tu sistema inmunológico. Frasco con 30 tabletas.</p>
+      <p class="product-price">$10.00</p>
+      <button class="add-to-cart">Añadir al carrito</button>
+    </div>
+  
+    <!-- Producto 3 -->
+    <div class="product-card" data-price="8" data-sold="30">
+      <img src="imagenes/Productos/ibuprofemo.jpg" alt="Producto 3" class="product-image">
+      <h3 class="product-name">Ibuprofeno 200mg</h3>
+      <p class="product-description">Antiinflamatorio y analgésico. Caja con 20 tabletas.</p>
+      <p class="product-price">$8.00</p>
+      <button class="add-to-cart">Añadir al carrito</button>
+    </div>
+  
+    <!-- Producto 4 -->
+    <div class="product-card" data-price="6.5" data-sold="40">
+      <img src="imagenes/Productos/antiseptica.jpg" alt="Producto 4" class="product-image">
+      <h3 class="product-name">Crema Antiséptica</h3>
+      <p class="product-description">Protege y sana heridas menores. Tubo de 50g.</p>
+      <p class="product-price">$6.50</p>
+      <button class="add-to-cart">Añadir al carrito</button>
+    </div>
+  
+    <!-- Producto 5 -->
+    <div class="product-card" data-price="7" data-sold="25">
+      <img src="imagenes/Productos/tos.jpeg" alt="Producto 5" class="product-image">
+      <h3 class="product-name">Jarabe para la Tos</h3>
+      <p class="product-description">Alivia la tos seca y con flema. Frasco de 120ml.</p>
+      <p class="product-price">$7.00</p>
+      <button class="add-to-cart">Añadir al carrito</button>
+    </div>
+  
+    <!-- Producto 6 -->
+    <div class="product-card" data-price="4.5" data-sold="60">
+      <img src="imagenes/Productos/Gel.jpg" alt="Producto 6" class="product-image">
+      <h3 class="product-name">Gel Desinfectante</h3>
+      <p class="product-description">Mata el 99.9% de gérmenes. Botella de 500ml.</p>
+      <p class="product-price">$4.50</p>
+      <button class="add-to-cart">Añadir al carrito</button>
+    </div>
+  
+    <!-- Producto 7 -->
+    <div class="product-card" data-price="12" data-sold="15">
+      <img src="imagenes/Productos/omeprazol.png" alt="Producto 7" class="product-image">
+      <h3 class="product-name">Omeprazol 20mg</h3>
+      <p class="product-description">Alivia el reflujo y protege el estómago. Caja con 14 cápsulas.</p>
+      <p class="product-price">$12.00</p>
+      <button class="add-to-cart">Añadir al carrito</button>
+    </div>
+  
+    <!-- Producto 8 -->
+    <div class="product-card" data-price="15" data-sold="10">
+      <img src="imagenes/Productos/ternometro.jpeg" alt="Producto 8" class="product-image">
+      <h3 class="product-name">Termómetro Digital</h3>
+      <p class="product-description">Medición rápida y precisa. Incluye batería.</p>
+      <p class="product-price">$15.00</p>
+      <button class="add-to-cart">Añadir al carrito</button>
+    </div>
+  
+    <!-- Producto 9 -->
+    <div class="product-card" data-price="9" data-sold="35">
+      <img src="imagenes/Productos/mascarilla.jpg" alt="Producto 9" class="product-image">
+      <h3 class="product-name">Mascarillas Desechables</h3>
+      <p class="product-description">Caja con 50 unidades. Triple capa de protección.</p>
+      <p class="product-price">$9.00</p>
+      <button class="add-to-cart">Añadir al carrito</button>
+    </div>
+  
+    <!-- Producto 10 -->
+    <div class="product-card" data-price="5.5" data-sold="20">
+      <img src="imagenes/Productos/vendas.jpg" alt="Producto 10" class="product-image">
+      <h3 class="product-name">Vendas Elásticas</h3>
+      <p class="product-description">Soporte para lesiones musculares. Paquete de 2 piezas.</p>
+      <p class="product-price">$5.50</p>
+      <button class="add-to-cart">Añadir al carrito</button>
+    </div>
+  </div>
+  
+    <!-- Agrega los demás productos con los atributos data-price y data-sold -->
+  </div>
+
+  <!-- Footer -->
+  <section class="footer-section">
+    <img src="https://images.vexels.com/media/users/3/135594/isolated/preview/bdfd2abb53c8631d97c489a07e121c44-icono-de-capsula.png" alt="Logo de la Farmacia Cápsula" class="footer-logo">
+    <h2 class="footer-title">Farmacia Cápsula</h2>
+    <p class="footer-contact">A domicilio: 800-522-6600</p>
+    <p class="footer-email">Correo electrónico: info@farmaciacapsula.com</p>
+    <ul class="footer-links">
+      <li><a href="#">Contáctanos</a></li>
+      <li><a href="#">Información Legal</a></li>
+      <li><a href="#">Preguntas Frecuentes</a></li>
+    </ul>
+  </section>
+
+  <!-- Script de filtro -->
+  <script>
+    function filterProducts() {
+      const filter = document.getElementById('product-filter').value;
+      const productsGrid = document.querySelector('.products-grid');
+      const products = Array.from(productsGrid.children);
+
+      if (filter === 'most-sold') {
+        products.sort((a, b) => parseInt(b.dataset.sold) - parseInt(a.dataset.sold));
+      } else if (filter === 'cheapest') {
+        products.sort((a, b) => parseFloat(a.dataset.price) - parseFloat(b.dataset.price));
+      }
+
+      productsGrid.innerHTML = '';
+      products.forEach(product => productsGrid.appendChild(product));
+    }
+  </script>
+</body>
+</html>

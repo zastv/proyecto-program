@@ -1,0 +1,92 @@
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #930001;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Contenedor principal */
+.service-card {
+    padding: 2rem; /* Espaciado más generoso */
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transform: translateY(0);
+    text-align: center; /* Asegura que todo esté centrado */
+    max-width: 300px; /* Ajusta el tamaño máximo para uniformidad */
+    margin: auto; /* Centra la tarjeta en su contenedor */
+}
+
+/* Efecto hover */
+.service-card:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(-8px);
+}
+
+/* Contenedor del ícono */
+.icon-container {
+    position: relative;
+    margin-top: -3rem; /* Corrige la posición inicial */
+}
+
+/* Fondo del ícono */
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+    background-color: #6366f1; /* Indigo-600 */
+    border-radius: 50%; /* Asegura que el fondo sea circular */
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover en el fondo del ícono */
+.service-card:hover .icon {
+    background-color: #4f46e5; /* Indigo-700 */
+}
+
+/* SVG del ícono */
+.icon-svg {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: currentColor;
+}
+
+/* Contenido del servicio */
+.content {
+    margin-top: 2rem;
+}
+
+.title {
+    font-size: 1.5rem; /* Ajuste de tamaño */
+    font-weight: bold;
+    color: #1f2937; /* Gray-800 */
+    margin-bottom: 1rem;
+}
+
+.description {
+    color: #4b5563; /* Gray-600 */
+    line-height: 1.6;
+    font-size: 1rem;
+}

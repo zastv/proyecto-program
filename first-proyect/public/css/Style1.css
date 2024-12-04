@@ -1,0 +1,256 @@
+:root {
+    --blanco: #ffffff;
+    --amarillo: #ffef0f;
+    --azul: #2711b5;
+    --oscuro: #212121;
+    --primario: #E9A135;
+    --secundario: #2F5EEB;
+    --gris: #757575;
+    --grisClaro: #E4D9E5;
+ }
+
+ .nombre
+ {
+     text-align: center;
+     font-size: 1.8rem;
+ }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    padding: 10px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #930001;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* index.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+  }
+  
+  .login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .login-form h1 {
+    text-align: center;
+    color: #1a73e8;
+    margin-bottom: 2rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 2px rgba(26,115,232,0.2);
+  }
+  
+  button {
+    width: 100%;
+    padding: 0.8rem;
+    background: #4b0808;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  button:hover {
+    background: #1557b0;
+  }
+  
+  .links {
+    margin-top: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .links a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .links a:hover {
+    text-decoration: underline;
+  }
+
+
+  .footer-section {
+    background: linear-gradient(to bottom right, #00BFFF, #00FFFF); /* Fondo degradado */
+    padding: 20px;
+    text-align: center;
+    color: #000;
+    border-radius: 8px;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 2500px;
+}
+
+/* Estilo para el ícono */
+.footer-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para el título */
+.footer-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Estilos para el texto de contacto */
+.footer-contact,
+.footer-email {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+/* Estilo para los enlaces */
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-logo {
+    width: 60px; /* Ajusta el tamaño del logo */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Estilo para la sección con fondo */
+.secnavbar {
+  background-image: url('https://img.freepik.com/vector-gratis/fondo-geometrico-plano_23-2148967370.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1722902400&semt=ais_hybrid');
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0; /* Espacio alrededor del contenido */
+  text-align: center;
+  color: #000; /* Color de texto */
+  position: relative;
+}
+
+/* Estilos para el título */
+.secnavbar .portada {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000; /* Color de texto */
+}
+
+/* Estilos para los botones */
+.secnavbar .navbar a {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 20px;
+  color: white;
+  background-color: #8B0000; /* Color del botón */
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.secnavbar .navbar a:hover {
+  background-color: #A52A2A; /* Color al pasar el cursor */
+}
+
+  

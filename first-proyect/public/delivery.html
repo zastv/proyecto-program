@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Farmacia Cápsula</title>
+    <link rel="stylesheet" href="css/style4.css" />
+    <style>
+      
+      body {
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 30px;
+      }
+
+      .navbar a {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: bold;
+      }
+
+      
+      .producto {
+        display: inline-block;
+        margin: 15px;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        text-align: center;
+        width: 200px;
+      }
+
+      .producto img {
+        width: 150px;
+        height: auto;
+        margin-bottom: 10px;
+      }
+
+      .producto h3 {
+        font-size: 16px;
+        margin: 10px 0;
+      }
+
+      .producto p {
+        font-size: 14px;
+        color: #555;
+        margin: 5px 0;
+      }
+
+      .producto button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .producto button:hover {
+        background-color: #0056b3;
+      }
+
+      
+      .footer-section {
+        margin-top: 30px;
+        padding: 20px;
+        background-color: #f8f9fa;
+        text-align: center;
+      }
+
+      .footer-section img {
+        max-width: 100px;
+      }
+
+      .footer-section h2 {
+        font-size: 18px;
+        margin: 10px 0;
+      }
+
+      .footer-links li {
+        list-style: none;
+        margin: 5px 0;
+      }
+
+      .footer-links a {
+        text-decoration: none;
+        color: #007bff;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="modal" class="modal">
+      <div class="modal-contenido">
+        <h2>Farmacia Cápsula</h2>
+        <p>¡La mejor farmacia que puedas encontrar!</p>
+        <button class="cerrar-btn" onclick="cerrarModal()">Cerrar</button>
+      </div>
+    </div>
+
+
+    <section class="secnavbar">
+      <h1>Farmacia Cápsula</h1>
+    <p>Encuentra los mejores productos farmaceuticos con nosotros.</p>
+      <div class="navbar">
+        <a href="index.php">inicio</a>
+        <a href="iniciar_sesión.html">iniciar sesión</a>
+        <a href="producto.html">producto</a>
+        <a href="servicios.html">servicios</a>
+      </div>
+    </section>
+
+    
+    <div class="producto">
+      <img src="https://farmacias.fischelenlinea.com/Images/Upload/1/1/7c4ea9265851872.jpg" alt="Producto 1" />
+      <h3>BIOGAIA PROTECTIS TABLETAS MASTICABLES</h3>
+      <p>₡ 7.912,50 i.v.a.i.</p>
+      <button>Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="https://farmacias.fischelenlinea.com/Images/Upload/1/1/4e0d6667021198_400x350.jpg" alt="Producto 2" />
+      <h3>COBAN VENDA ELASTICA 3X5 YDS</h3>
+      <p>₡ 3.060,00 i.v.a.i.</p>
+      <button>Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="https://farmacias.fischelenlinea.com/Images/Upload/1/1/e6f2df87400X350-6012315.png" alt="Producto 3" />
+      <h3>GEX DÍA ANTIGRIPAL 5 SOBRES</h3>
+      <p>₡ 1.499,99 i.v.a.i.</p>
+      <button>Agregar al carrito</button>
+    </div>
+
+    
+    <div class="producto">
+      <img src="https://farmacias.fischelenlinea.com/Images/Upload/1/1/2212f9040913005_400-x-350px.jpg" alt="Producto 4" />
+      <h3>VFUEL GEL ENERGÉTICO VAINILLA 32 GR</h3>
+      <p>₡ 1.157,69 i.v.a.i.</p>
+      <button>Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="https://farmacias.fischelenlinea.com/Images/Upload/1/1/235ee7a60913098_400x350.jpg" alt="Producto 5" />
+      <h3>VFUEL GEL ENERGÉTICO COOL CITRUS 32 GR</h3>
+      <p>₡ 1.094,97 i.v.a.i.</p>
+      <button>Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="https://farmacias.fischelenlinea.com/Images/Upload/1/1/d43c1b935246838_AFELIUS-EXPERT_400x350px.png"
+      alt="Producto 6" />
+      <h3>AFELIUS EXPERT</h3>
+      <p>₡ 8.324,99 i.v.a.i.</p>
+      <button>Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="https://farmacias.fischelenlinea.com/Images/Upload/1/1/9c932ae52642595-SESDERMA-SESMAHAL-B3-SERUM-MIST-30ML-400x350px.png"
+      alt="Producto 7" />
+      <h3>SESDERMA SESMAHAL B3 SERUM + MIST LIPOSOMADO 30 ML</h3>
+      <p>₡ 13.031,66 i.v.a.i.</p>
+      <button>Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="https://farmacias.fischelenlinea.com/Images/Upload/1/2/a6c0e3807397807-650X450.png"
+      alt="Producto 8" />
+      <h3>CODYLIFE MILANESSE PLATEADO BRAZALETE IDENTIFICADOR</h3>
+      <p>₡ 13.987,77 i.v.a.i.</p>
+      <button>Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="https://farmacias.fischelenlinea.com/Images/Upload/1/2/f41e9d777131730.jpg"
+      alt="Producto 9" />
+      <h3>BOTANICA PHARMA B-COMPLEX X60 UDS</h3>
+      <p>₡ 4.629,72 i.v.a.i.</p>
+      <button>Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="https://farmacias.fischelenlinea.com/Images/Upload/1/2/1eae5528435045201365.jpg"
+      alt="Producto 10" />
+      <h3>BOTÁNICAPHARMA ACEITE DE ALMENDRAS DULCES 500 ML</h3>
+      <p>₡ 11.582,67 i.v.a.i.</p>
+      <button>Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="https://farmacias.fischelenlinea.com/Images/Upload/1/2/920194058435045202140.jpg"
+      alt="Producto 11" />
+      <h3>BOTÁNICAPHARMA ACEITE DE ÁRBOL DE TÉ 20 ML</h3>
+      <p>₡ 7.365,00 i.v.a.i.</p>
+      <button>Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="https://farmacias.fischelenlinea.com/Images/Upload/1/2/7eb1bda8435045202133.jpg"
+      alt="Producto 12" />
+      <h3>BOTÁNICAPHARMA CONTORNO DE OJOS 30 ML</h3>
+      <p>₡ 10.410,35 i.v.a.i.</p>
+      <button>Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="https://farmacias.fischelenlinea.com/Images/Upload/1/2/e07b334b4163898_2.jpg"
+      alt="Producto 13" />
+      <h3>COLGATE PASTA BLANQUEADORA PRO ALIVIO 75 ML</h3>
+      <p>₡ 4.500,06 i.v.a.i.</p>
+      <button>Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="https://farmacias.fischelenlinea.com/Images/Upload/1/2/90232bd5824198.jpg"
+      alt="Producto 14" />
+      <h3>KOTEX TOALLA SANITARIA NOCTURNA CON ALAS 8 UNIDADES</h3>
+      <p>₡ 1.189.45 i.v.a.i.</p>
+      <button>Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="https://farmacias.fischelenlinea.com/Images/Upload/1/2/2bad64b27022671_650x450.jpg"
+      alt="Producto 15" />
+      <h3>NEXCARE COMPRESA FRÍO-CALIENTE</h3>
+      <p>₡ 5.579,50 i.v.a.i.</p>
+      <button>Agregar al carrito</button>
+    </div>
+
+
+  
+  
+    <section class="footer-section">
+      <img src="https://images.vexels.com/media/users/3/135594/isolated/preview/bdfd2abb53c8631d97c489a07e121c44-icono-de-capsula.png" alt="Logo de la Farmacia Cápsula" />
+      <h2>Farmacia Cápsula</h2>
+      <p>A domicilio: 800-522-6600</p>
+      <p>Correo electrónico: info@farmaciacapsula.com</p>
+      <ul class="footer-links">
+        <li><a href="#">Contáctanos</a></li>
+        <li><a href="#">Información Legal</a></li>
+        <li><a href="#">Preguntas Frecuentes</a></li>
+      </ul>
+    </section>
+
+    <script>
+      
+      window.onload = function () {
+        document.getElementById("modal").style.display = "block";
+      };
+
+      
+      function cerrarModal() {
+        document.getElementById("modal").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
